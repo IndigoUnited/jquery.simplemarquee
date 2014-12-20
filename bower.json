@@ -1,0 +1,26 @@
+{
+  "name": "jquery.simplemarquee",
+  "version": "0.1.9",
+  "main": "lib/jquery-simplemarquee.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.9||^2.0"
+  },
+  "homepage": "https://github.com/IndigoUnited/jquery.simplemarquee",
+  "authors": [
+    "IndigoUnited"
+  ],
+  "description": "A jQuery plugin that aims to provide a scrolling marquee similar to the good old winamp player",
+  "keywords": [
+    "marquee",
+    "text",
+    "slider",
+    "winamp"
+  ]
+}

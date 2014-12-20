@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html><!--<![endif]-->
+    <head>
+        <title>simplemarquee demo</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../lib/jquery.simplemarquee.js"></script>
+    </head>
+    <body>
+        <style>
+        html, body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .example-left, .example-right,
+        .example-options {
+            width: 200px;
+            padding: 5px;
+
+            background: #444;
+            color: #fff;
+        }
+
+        .example-top, .example-bottom {
+            width: 75px;
+            height: 50px;
+            padding: 5px;
+
+            background: #444;
+            color: #fff;
+        }
+        </style>
+
+        <h3>Left</h3>
+        <div class="example-left">
+            Hi <strong>there</strong>. How are you? I hope you are doing <strong>fine!</strong>
+        </div>
+
+        <h3>Right</h3>
+        <div class="example-right">
+            Hi <strong>there</strong>. How are you? I hope you are doing <strong>fine!</strong>
+        </div>
+
+        <h3>Top</h3>
+        <div class="example-top">
+            Hi <strong>there</strong>. How are you? I hope you are doing <strong>fine!</strong>
+        </div>
+
+        <h3>Bottom</h3>
+        <div class="example-bottom">
+            Hi <strong>there</strong>. How are you? I hope you are doing <strong>fine!</strong>
+        </div>
+
+        <hr>
+
+        <h3>Options</h3>
+        <pre>
+        <code>
+        .simplemarquee({
+            speed: 100,
+            cycles: 5,
+            space: 100,
+            delayBetweenCycles: 5000,
+            handleHover: false,
+            handleResize: false
+        });
+        </code>
+        </pre>
+        <div class="example-options">
+            Hi <strong>there</strong>. How are you? I hope you are doing <strong>fine!</strong>
+        </div>
+
+
+        <script>
+        /*jshint strict:false*/
+        /*global $*/
+        $(document).ready(function () {
+            $('.example-left').simplemarquee();
+
+            $('.example-right').simplemarquee({
+                direction: 'right'
+            });
+
+            $('.example-top').simplemarquee({
+                direction: 'top'
+            });
+
+            $('.example-bottom').simplemarquee({
+                direction: 'bottom'
+            });
+
+            $('.example-options').simplemarquee({
+                speed: 100,
+                cycles: 5,
+                space: 100,
+                delayBetweenCycles: 5000,
+                handleHover: false,
+                handleResize: false
+            });
+        });
+        </script>
+    </body>
+</html>
