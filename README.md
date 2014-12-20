@@ -15,7 +15,7 @@ Available `options`:
 
 - `speed`: The speed in pixels per second, defaults to `100`.
 - `direction`: The direction, defaults to `left` (available: `left`, `right`, `top` and `bottom`)
-- `cycles`: Number of cycles before pausing, defaults to `1` (pass `Infinity` to continously cycle)
+- `cycles`: Number of cycles before pausing, defaults to `1` (pass `Infinity` to cycle continously)
 - `space`: The space in px between the duplicated contents, defaults to `40`
 - `delayBetweenCycles`: The delay between each cycle in ms, defaults to `2000`
 - `handleHover`: Pause/restart on hover, defaults to `true`
@@ -37,18 +37,29 @@ $('.some-el').simplemarquee('update');
 
 ### .simplemarquee('pause')
 
-Pauses the marquee.
+Pauses the marquee.   
+Emits a `pause` event.
 
+```js
+$('.some-el').simplemarquee('pause');
+```
 
 ### .simplemarquee('resume')
 
-Resumes the marquee.
+Resumes the marquee.   
+Emits a `resume` event.
 
+```js
+$('.some-el').simplemarquee('pause');
+```
 
 ### .simplemarquee('toggle')
 
 Toggle between the pause/resume methods.
 
+```js
+$('.some-el').simplemarquee('toggle');
+```
 
 ### .simplemarquee('destroy')
 
