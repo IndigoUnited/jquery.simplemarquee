@@ -4,6 +4,24 @@ A jQuery plugin that aims to provide a scrolling marquee similar to the good old
 The main goal of this plugin is simplicity, so it has very little options but it works nicely.
 
 
+## Why?
+
+I've tried [jQuery.Marquee](https://github.com/aamirafridi/jQuery.Marquee) which provides similar functionality but:
+
+- It has unnecessary cruft to support older browsers
+- Does not use `transform: translate(x,y)` when moving text, causing unnecessary reflows
+- Has some bugs, the most important [one](https://github.com/aamirafridi/jQuery.Marquee/issues/41) leaks `<style>` tags because they are not removed on destruction
+
+So I've decided to implement my own since it was an easy task anyway.
+
+
+## Demo
+
+Check out the [demo](http://indigounited.github.io/jquery.simplemarquee/test/demo.html)
+
+This same demo is available in the `test/demo.html` file.
+
+
 ## API
 
 ### .simplemarquee([options])
