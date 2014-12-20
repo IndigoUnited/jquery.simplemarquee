@@ -65,7 +65,7 @@
             Hi <strong>there</strong>.
         </div>
 
-        <h3>Options</h3>
+        <h3>With options</h3>
         <pre>
         <code>
         .simplemarquee({
@@ -89,25 +89,49 @@
         $(document).ready(function () {
             $('.example-left').simplemarquee();
             $('.example-left').on({
-                'cycle': console.log.bind(console, 'cycle'),
-                'pause': console.log.bind(console, 'pause'),
-                'resume': console.log.bind(console, 'resume'),
-                'finish': console.log.bind(console, 'finish')
+                'cycle': console.log.bind(console, 'example-left', 'cycle'),
+                'pause': console.log.bind(console, 'example-left', 'pause'),
+                'resume': console.log.bind(console, 'example-left', 'resume'),
+                'finish': console.log.bind(console, 'example-left', 'finish')
             });
 
             $('.example-right').simplemarquee({
                 direction: 'right'
             });
+            $('.example-right').on({
+                'cycle': console.log.bind(console, 'example-right', 'cycle'),
+                'pause': console.log.bind(console, 'example-right', 'pause'),
+                'resume': console.log.bind(console, 'example-right', 'resume'),
+                'finish': console.log.bind(console, 'example-right', 'finish')
+            });
 
             $('.example-top').simplemarquee({
                 direction: 'top'
+            });
+            $('.example-top').on({
+                'cycle': console.log.bind(console, 'example-top', 'cycle'),
+                'pause': console.log.bind(console, 'example-top', 'pause'),
+                'resume': console.log.bind(console, 'example-top', 'resume'),
+                'finish': console.log.bind(console, 'example-top', 'finish')
             });
 
             $('.example-bottom').simplemarquee({
                 direction: 'bottom'
             });
+            $('.example-bottom').on({
+                'cycle': console.log.bind(console, 'example-bottom', 'cycle'),
+                'pause': console.log.bind(console, 'example-bottom', 'pause'),
+                'resume': console.log.bind(console, 'example-bottom', 'resume'),
+                'finish': console.log.bind(console, 'example-bottom', 'finish')
+            });
 
             $('.example-enough-space').simplemarquee();
+            $('.example-enough-space').on({
+                'cycle': console.log.bind(console, 'example-enough-space', 'cycle'),
+                'pause': console.log.bind(console, 'example-enough-space', 'pause'),
+                'resume': console.log.bind(console, 'example-enough-space', 'resume'),
+                'finish': console.log.bind(console, 'example-enough-space', 'finish')
+            });
 
             $('.example-options').simplemarquee({
                 speed: 100,
@@ -116,6 +140,12 @@
                 delayBetweenCycles: 5000,
                 handleHover: false,
                 handleResize: false
+            });
+            $('.example-options').on({
+                'cycle': console.log.bind(console, 'example-options', 'cycle'),
+                'pause': console.log.bind(console, 'example-options', 'pause'),
+                'resume': console.log.bind(console, 'example-options', 'resume'),
+                'finish': console.log.bind(console, 'example-options', 'finish')
             });
         });
         </script>
