@@ -17,7 +17,7 @@ So I've decided to implement my own since it was an easy task anyway.
 
 ## Demo
 
-Check out the [demo](http://indigounited.github.io/jquery.simplemarquee/test/demo.html)
+Check out the [demo](http://indigounited.github.io/jquery.simplemarquee/test/demo.html)   
 This same demo is available in the `test/demo.html` file.
 
 
