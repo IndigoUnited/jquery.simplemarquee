@@ -45,9 +45,10 @@ $('.some-el').simplemarquee();
 If scrolling is not necessary, the plugin will add `has-enough-space` class to the element.
 
 
-### .simplemarquee('update')
+### .simplemarquee('update', [restart])
 
 Updates the marquee, including calculations made.
+If `restart` is true, the cycles will be restarted.
 
 ```js
 $('.some-el').simplemarquee('update');
