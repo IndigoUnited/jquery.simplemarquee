@@ -42,6 +42,8 @@ Available `options`:
 $('.some-el').simplemarquee();
 ```
 
+If scrolling is not necessary, the plugin will add `has-enough-space` class to the element.
+
 
 ### .simplemarquee('update')
 
