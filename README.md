@@ -92,7 +92,7 @@ $('.some-el').simplemarquee('destroy');
 
 ### Events
 
-- `cycle` - Fired after finishing each cycle
+- `cycle` - Fired before each cycle
 - `finish` - Fired when all cycles are done
 - `pause` - Fired when paused
 - `resume` - Fired when resumed

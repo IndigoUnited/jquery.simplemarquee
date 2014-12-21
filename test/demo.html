@@ -90,26 +90,22 @@
         /*jshint strict:false*/
         /*global $*/
         $(document).ready(function () {
-            $('.example-left').simplemarquee();
             $('.example-left').on({
                 'cycle': console.log.bind(console, 'example-left', 'cycle'),
                 'pause': console.log.bind(console, 'example-left', 'pause'),
                 'resume': console.log.bind(console, 'example-left', 'resume'),
                 'finish': console.log.bind(console, 'example-left', 'finish')
             });
+            $('.example-left').simplemarquee();
 
-            $('.example-right').simplemarquee({
-                direction: 'right'
-            });
             $('.example-right').on({
                 'cycle': console.log.bind(console, 'example-right', 'cycle'),
                 'pause': console.log.bind(console, 'example-right', 'pause'),
                 'resume': console.log.bind(console, 'example-right', 'resume'),
                 'finish': console.log.bind(console, 'example-right', 'finish')
             });
-
-            $('.example-top').simplemarquee({
-                direction: 'top'
+            $('.example-right').simplemarquee({
+                direction: 'right'
             });
             $('.example-top').on({
                 'cycle': console.log.bind(console, 'example-top', 'cycle'),
@@ -117,25 +113,34 @@
                 'resume': console.log.bind(console, 'example-top', 'resume'),
                 'finish': console.log.bind(console, 'example-top', 'finish')
             });
-
-            $('.example-bottom').simplemarquee({
-                direction: 'bottom'
+            $('.example-top').simplemarquee({
+                direction: 'top'
             });
+
             $('.example-bottom').on({
                 'cycle': console.log.bind(console, 'example-bottom', 'cycle'),
                 'pause': console.log.bind(console, 'example-bottom', 'pause'),
                 'resume': console.log.bind(console, 'example-bottom', 'resume'),
                 'finish': console.log.bind(console, 'example-bottom', 'finish')
             });
+            $('.example-bottom').simplemarquee({
+                direction: 'bottom'
+            });
 
-            $('.example-enough-space').simplemarquee();
             $('.example-enough-space').on({
                 'cycle': console.log.bind(console, 'example-enough-space', 'cycle'),
                 'pause': console.log.bind(console, 'example-enough-space', 'pause'),
                 'resume': console.log.bind(console, 'example-enough-space', 'resume'),
                 'finish': console.log.bind(console, 'example-enough-space', 'finish')
             });
+            $('.example-enough-space').simplemarquee();
 
+            $('.example-options').on({
+                'cycle': console.log.bind(console, 'example-options', 'cycle'),
+                'pause': console.log.bind(console, 'example-options', 'pause'),
+                'resume': console.log.bind(console, 'example-options', 'resume'),
+                'finish': console.log.bind(console, 'example-options', 'finish')
+            });
             $('.example-options').simplemarquee({
                 speed: 100,
                 cycles: 5,
@@ -143,12 +148,6 @@
                 delayBetweenCycles: 5000,
                 handleHover: false,
                 handleResize: false
-            });
-            $('.example-options').on({
-                'cycle': console.log.bind(console, 'example-options', 'cycle'),
-                'pause': console.log.bind(console, 'example-options', 'pause'),
-                'resume': console.log.bind(console, 'example-options', 'resume'),
-                'finish': console.log.bind(console, 'example-options', 'finish')
             });
         });
         </script>
