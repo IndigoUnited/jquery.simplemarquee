@@ -47,7 +47,7 @@ If scrolling is not necessary, the plugin will add `has-enough-space` class to t
 
 ### .simplemarquee('update', [restart])
 
-Updates the marquee, including calculations made.
+Updates the marquee, including calculations made.   
 If `restart` is true, the cycles will be restarted.
 
 ```js
