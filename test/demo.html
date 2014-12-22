@@ -90,6 +90,7 @@
         /*jshint strict:false*/
         /*global $*/
         $(document).ready(function () {
+            // Left demo
             $('.example-left').on({
                 'cycle': console.log.bind(console, 'example-left', 'cycle'),
                 'pause': console.log.bind(console, 'example-left', 'pause'),
@@ -98,6 +99,7 @@
             });
             $('.example-left').simplemarquee();
 
+            // Right demo
             $('.example-right').on({
                 'cycle': console.log.bind(console, 'example-right', 'cycle'),
                 'pause': console.log.bind(console, 'example-right', 'pause'),
@@ -107,6 +109,8 @@
             $('.example-right').simplemarquee({
                 direction: 'right'
             });
+
+            // Top demo
             $('.example-top').on({
                 'cycle': console.log.bind(console, 'example-top', 'cycle'),
                 'pause': console.log.bind(console, 'example-top', 'pause'),
@@ -117,6 +121,7 @@
                 direction: 'top'
             });
 
+            // Bottom demo
             $('.example-bottom').on({
                 'cycle': console.log.bind(console, 'example-bottom', 'cycle'),
                 'pause': console.log.bind(console, 'example-bottom', 'pause'),
@@ -127,6 +132,7 @@
                 direction: 'bottom'
             });
 
+            // Enough space demo
             $('.example-enough-space').on({
                 'cycle': console.log.bind(console, 'example-enough-space', 'cycle'),
                 'pause': console.log.bind(console, 'example-enough-space', 'pause'),
@@ -135,6 +141,7 @@
             });
             $('.example-enough-space').simplemarquee();
 
+            // With options demo
             $('.example-options').on({
                 'cycle': console.log.bind(console, 'example-options', 'cycle'),
                 'pause': console.log.bind(console, 'example-options', 'pause'),
