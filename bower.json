@@ -1,6 +1,6 @@
 {
   "name": "jquery.simplemarquee",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "main": "lib/jquery.simplemarquee.js",
   "ignore": [
     "**/.*",
