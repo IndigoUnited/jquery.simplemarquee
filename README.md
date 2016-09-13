@@ -37,6 +37,7 @@ Available `options`:
 - `delayBetweenCycles`: The delay between each cycle in ms, defaults to `2000`
 - `handleHover`: Pause/restart on hover, defaults to `true`
 - `handleResize`: Update marquee on resize, defaults to `true`
+- `easing`: The timing function used for the CSS animation, defaults to `linear`
 
 ```js
 $('.some-el').simplemarquee();
